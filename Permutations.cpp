@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
 void rep(int* ar)
 {
 	for (int i = 0; i <3 ; i++)
@@ -17,7 +16,6 @@ void rep(int* ar)
 		}
 	}
 }
-
 void norep(int* ar)
 {
 	for (int i = 0; i <3 ; i++)
@@ -36,10 +34,11 @@ void norep(int* ar)
 int main()
 {
 	int ar[]={1,2,3};
-	cout<<"With Repetitions\n";
-	rep(ar);
-	cout<<"Without Repetitions\n";
+	cout<<"With Repetitions\n\n";
 	norep(ar);
+	cout<<"\n";
+	cout<<"Without Repetitions\n\n";
+	rep(ar);
 	return 0;
 }
 

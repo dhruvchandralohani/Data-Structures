@@ -51,7 +51,7 @@ void powerset(set<int> s)
 		for(set<int>::iterator it=s.begin();it!=s.end();it++)
 		{
 			if((p[i][l-1-k++])=='1')
-				cout<<*it;			
+				cout<<*it;
 		}
 		cout<<endl;
 	}
@@ -99,7 +99,6 @@ set<int> Intersection(set<int> s,set<int> s2)
 }
 void Subset(set<int> s, set<int> s2)
 {
-	
 	set<int>::iterator it=s.begin();
 	set<int>::iterator it2=s2.begin();
 	set<int>::iterator it3;
@@ -168,7 +167,6 @@ set<int> Difference(set<int> s,set<int> s2)
 		if(*it==*it2)
 			s.erase(*it2);
 	}
-
 	return s;
 }
 set<int> SymmetricDiff(set<int> s,set<int> s2)
@@ -197,6 +195,6 @@ int main()
 	show(s);
 	cout<<"\nEnter ELements of the Second set";
 	s2=input(s2);
-	show(s2);	
+	show(s2);
 	CartesianP(s,s2);
 }
